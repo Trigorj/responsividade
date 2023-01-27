@@ -1,0 +1,121 @@
+@charset "UTF8";
+
+*{
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --cor-form: #26CD62;
+    --cor1: #03A696;
+    --cor2: #8FD9D1;
+    --cor3: #F26363;
+    --cor4: #F2F2F2;
+    --cor5: #0D0D0D;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    background-color:var(--cor-form);
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+}
+#form{
+    margin-top: 0;
+    padding: 100px 15px 10px;
+}
+h2{
+    margin-bottom: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    color: rgb(255, 251, 251);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.356);
+}
+/**INPUTS*/
+input{
+    margin-top: 2px;
+    width: 83%;
+    height: 40px;
+
+}
+#form > button[type=submit]{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    color: var(--cor-form);
+    font-weight:bold;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+#form > button[type=reset]{
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-form);
+    border: 2px solid rgba(255, 255, 255, 0.493);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#form > button[type=reset],[type="submit"]:hover{
+    cursor: pointer;
+   
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+#textFormEmail{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: .8em;
+
+}
+#textFormSenha{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: .8em;
+    
+}
+#textForm{
+    color: #000;
+    margin-top: 10px;
+    font-size: .8em;
+} 
+
+/*---------Estilos do input----------*/
+div.campo{
+    background-color: green;
+    margin: 5px 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+div.campo > span{
+    color: #fff;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+div.campo > input{
+
+    font-size: 1em;
+    width:calc(100%, -4px);
+    border-radius: 5px;
+    height: 100%;
+    transform: translateY(-12px);
+    padding: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+}
